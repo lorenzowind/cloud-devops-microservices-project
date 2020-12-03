@@ -10,6 +10,8 @@ dockerpath="lorenzowind/devops"
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker tag devops lorenzowind/devops
+docker login --username=lorenzowind
 
 # Step 3:
 # Push image to a docker repository
